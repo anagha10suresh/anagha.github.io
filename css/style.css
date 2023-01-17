@@ -3,7 +3,6 @@ tr,td{
 border-collapse: collapse;
 padding: 2px;
 color: #28B463;
- font-style: Baskerville Old Face;
  font-size: 20px;
 }
 
@@ -40,6 +39,9 @@ text-decoration: none;
 color:#28B463;
 font-size: 20px;
 }
+a:hover{
+    border-bottom: 2px solid green;
+}
 .fifth img{
 border:none;
 width:20px; 
@@ -49,3 +51,33 @@ height:20px;
 p{
 	line-height: 30px;
 }
+
+.sec,.fir{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:30px; top:0px;}
+  50%  { left:30px; top:30px;}
+  75%  { left:0px; top:30px;}
+  100% { left:0px; top:0px;}
+}
+.sty{
+  width: 200px;
+  height: 40px;
+  background: #D4F5D6;
+  transition: width 2s ease;
+}
+
+.sty:hover {
+  width: 100%;
+}
+
+
+
+
